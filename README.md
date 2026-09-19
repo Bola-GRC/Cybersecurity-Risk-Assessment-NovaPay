@@ -1,131 +1,210 @@
-# NovaPay Solutions Ltd. - ISO/IEC 27001 GRC Portfolio Project
-
-**Prepared by:** Bola  
-**Industry:** FinTech / Digital Payments  
-**Framework:** ISO/IEC 27001:2022  
-**Project type:** Cybersecurity GRC portfolio case study
+# NovaPay Solutions Ltd. | ISO/IEC 27001 GRC Portfolio
 
 ## Project Overview
 
-This project shows how I approached the design of an ISO/IEC 27001-aligned Information Security Management System (ISMS) for **NovaPay Solutions Ltd.**, a fictional Nigerian fintech company providing digital payment services to individuals and small businesses.
+This repository contains a practical Governance, Risk and Compliance (GRC) project developed for **NovaPay Solutions Ltd.**, a fictional Ireland-based fintech company.
 
-NovaPay is adapted from a training case study originally named PayNest Technologies. I changed the organisation name for my portfolio while keeping the original business scenario and confirmed security gaps. I also added practical GRC improvements such as a formal asset inventory, evidence tracker, clearer residual-risk logic, and stronger traceability between gaps, risks, treatments and controls.
+The project demonstrates how I would approach the development and implementation of an Information Security Management System (ISMS), with a focus on cybersecurity risk management and alignment with **ISO/IEC 27001:2022**.
 
-The purpose of the project is not to claim that NovaPay is ISO/IEC 27001 certified. It demonstrates how I would move a growing organisation from informal and reactive security practices toward a structured, risk-based and evidence-driven ISMS.
+The work covers the full GRC lifecycle, from understanding the business environment and identifying information security risks to assessing control gaps, determining risk treatment actions, documenting applicable controls, tracking evidence, and reporting results.
 
-## Business Scenario
+---
 
-NovaPay processes and relies on customer information, transaction data, employee information, financial records, application/source code and cloud-based systems.
+## Project Objectives
 
-The case study identified the following core challenges:
+The objectives of this project were to:
 
-- No clearly defined ISMS scope
-- Incomplete security policies
-- No formal information asset inventory
-- Inconsistent risk assessments
-- Security controls not formally selected
-- No Statement of Applicability (SoA)
-- Irregular security awareness training
-- Inconsistent third-party security checks
+- Define the business and information security scope.
+- Identify key information assets, threats, vulnerabilities, and risks.
+- Assess risks using likelihood and impact criteria.
+- Develop and maintain a structured cybersecurity risk register.
+- Perform a gap assessment against relevant ISO/IEC 27001 requirements.
+- Recommend appropriate risk treatment actions.
+- Develop a Statement of Applicability (SoA).
+- Demonstrate practical ISMS implementation activities.
+- Track control evidence and remediation activities.
+- Communicate cybersecurity risk and compliance information through structured reporting.
 
-## My Approach
+---
 
-I worked through the case as a Junior Cybersecurity GRC Consultant using the following flow:
+## Risk Assessment Approach
 
-**Business context -> ISMS scope -> asset inventory -> gap assessment -> risk assessment -> risk treatment -> control selection -> SoA -> evidence review -> PDCA improvement**
+The risk assessment process used in this project follows a structured approach:
 
-One important rule I applied throughout the project was not to assume that a control is effective simply because it may exist. Where the case study did not provide operating-effectiveness evidence, I kept the current residual risk conservative and identified the evidence that would be needed before reassessing the score.
+**Asset → Threat → Vulnerability → Risk → Likelihood → Impact → Risk Rating → Treatment**
 
-## Risk Methodology
+Risks were evaluated using defined likelihood and impact criteria to determine their overall risk level.
 
-The assessment uses a simple 5 x 5 qualitative model:
+Treatment decisions were then documented based on the appropriate response:
 
-**Risk Score = Likelihood x Impact**
+- Mitigate
+- Avoid
+- Transfer
+- Accept
 
-| Score | Rating |
-|---|---|
-| 1-4 | Low |
-| 5-9 | Moderate |
-| 10-14 | High |
-| 15-25 | Critical |
+The objective was not simply to document risks, but to demonstrate how identified risks can be linked to controls, ownership, remediation actions, evidence, and ongoing monitoring.
 
-The project distinguishes between:
+---
 
-- **Inherent risk:** risk before controls are considered.
-- **Current residual risk:** risk remaining after controls that can be evidenced as operating.
-- **Target residual risk:** desired risk level after planned treatment is implemented and tested.
+## Repository Structure
 
-## Repository Contents
+### `01_Project_Overview`
 
-### 01 - Project Overview
+Provides the foundation of the project, including the business context, project scope, objectives, key stakeholders, systems, information assets, and assumptions used throughout the assessment.
 
-- [Project Overview](01_Project_Overview/NovaPay_Project_Overview.pdf)
-- [ISMS Scope](01_Project_Overview/NovaPay_ISMS_Scope.pdf)
+---
 
-### 02 - Risk Assessment
+### `02_Risk_Assessment`
 
-- [Risk Assessment Methodology](02_Risk_Assessment/NovaPay_Risk_Assessment_Methodology.pdf)
-- [Asset Inventory](02_Risk_Assessment/NovaPay_Asset_Inventory.xlsx)
-- [Cybersecurity Risk Register](02_Risk_Assessment/NovaPay_Risk_Register.xlsx)
+Contains the cybersecurity risk assessment documentation and supporting risk register.
 
-### 03 - Gap Assessment
+This section demonstrates:
 
-- [ISO/IEC 27001 Gap Analysis](03_Gap_Assessment/NovaPay_ISO27001_Gap_Analysis.xlsx)
+- Asset identification
+- Threat identification
+- Vulnerability identification
+- Risk analysis
+- Likelihood assessment
+- Impact assessment
+- Risk scoring
+- Risk ownership
+- Existing controls
+- Recommended actions
 
-### 04 - Risk Treatment
+Excel versions are retained as working files, while PDF versions are included for easier review directly from the repository.
 
-- [Risk Treatment Plan](04_Risk_Treatment/NovaPay_Risk_Treatment_Plan.xlsx)
-- [Statement of Applicability](04_Risk_Treatment/NovaPay_Statement_of_Applicability.xlsx)
+---
 
-### 05 - ISMS Implementation
+### `03_Gap_Assessment`
 
-- [Six-Month PDCA Roadmap](05_ISMS_Implementation/NovaPay_6_Month_PDCA_Roadmap.pdf)
+Contains the ISO/IEC 27001 gap assessment.
 
-### 06 - Reporting
+The assessment identifies:
 
-- [Executive Summary](06_Reporting/NovaPay_Executive_Summary.pdf)
-- [Final GRC Assessment Report](06_Reporting/NovaPay_Final_GRC_Assessment_Report.pdf)
+- Existing controls
+- Control gaps
+- Current implementation status
+- Required remediation actions
+- Evidence requirements
+- Control ownership
 
-### Supporting Documents
+This provides visibility into areas where NovaPay's current security posture would require improvement to align with the target ISMS requirements.
 
-- [ISMS Evidence Tracker](supporting-documents/NovaPay_Evidence_Tracker.xlsx)
+---
 
-## Key Risk Areas Assessed
+### `04_Risk_Treatment`
 
-The risk register covers 12 priority scenarios, including:
+Contains the outputs used to determine how identified risks should be addressed.
 
-- Unauthorized access to customer and transaction information
-- Phishing and credential compromise
-- Third-party security compromise
-- Incomplete asset ownership and protection
-- Secure-development weaknesses
-- Cloud misconfiguration
-- Technical vulnerability management
-- Logging and security monitoring
-- Incident response readiness
-- Payment-service availability
-- Privacy, legal and contractual compliance
-- Privileged and source-code access
+Key deliverables include:
+
+- **Risk Treatment Plan**
+- **Statement of Applicability (SoA)**
+
+The Risk Treatment Plan assigns actions, responsibilities, treatment decisions, and remediation activities to identified risks.
+
+The Statement of Applicability documents the relevant information security controls and the justification for their inclusion or exclusion.
+
+---
+
+### `05_ISMS_Implementation`
+
+Contains documentation supporting the practical implementation of the Information Security Management System.
+
+This section demonstrates how risk assessment and compliance requirements can be translated into operational security controls, governance activities, policies, procedures, responsibilities, and monitoring activities.
+
+---
+
+### `06_Reporting`
+
+Contains project reporting used to communicate risk, compliance status, remediation progress, and security observations to relevant stakeholders.
+
+The purpose of this section is to demonstrate that GRC is not only about identifying risks, but also about communicating those risks clearly enough for stakeholders and management to make informed decisions.
+
+---
+
+### `07_Supporting_Documents`
+
+Contains supporting documentation used throughout the project.
+
+This includes the **NovaPay Evidence Tracker**, which is used to track security control evidence and maintain visibility of documentation required to demonstrate control implementation.
+
+---
+
+## Key Deliverables
+
+The portfolio includes practical examples of:
+
+- Cybersecurity Risk Assessment
+- Risk Register
+- ISO/IEC 27001 Gap Assessment
+- Risk Treatment Plan
+- Statement of Applicability
+- ISMS Implementation Documentation
+- Security and Compliance Reporting
+- Control Evidence Tracking
+
+---
 
 ## Skills Demonstrated
 
-- ISO/IEC 27001 ISMS scoping
-- Cybersecurity risk assessment
-- Risk register development
-- Inherent and residual risk analysis
-- Risk treatment planning
-- ISO/IEC 27001 gap analysis
-- Annex A control mapping
-- Statement of Applicability development
-- Asset management and classification
-- Third-party risk management
-- Control-evidence planning
-- Security metrics and objectives
-- PDCA and continual improvement
-- Audit and certification-readiness thinking
+This project demonstrates practical capability in:
 
-## Portfolio Disclaimer
+- Governance, Risk and Compliance
+- Cybersecurity Risk Assessment
+- Risk Analysis and Treatment
+- ISO/IEC 27001
+- Information Security Management Systems
+- Control Gap Analysis
+- Statement of Applicability Development
+- Security Control Mapping
+- Evidence Management
+- Remediation Tracking
+- Risk Register Management
+- Stakeholder Reporting
+- Security Documentation
 
-NovaPay Solutions Ltd. is a fictional organisation used for a cybersecurity GRC portfolio case study. The project does not contain real customer, employer or production information. Risk scores, proposed owners and timelines are educational estimates based on the supplied scenario and should not be treated as production risk measurements.
+---
 
-For formal ISO/IEC 27001 certification work, an authorised copy of the standard and organisation-specific legal, regulatory, contractual and technical evidence should be used.
+## Practical GRC Lifecycle Demonstrated
+
+The project follows a practical lifecycle:
+
+1. Understand the organisation and define scope
+2. Identify assets and security risks
+3. Assess likelihood and business impact
+4. Document risks in the risk register
+5. Assess existing controls and identify gaps
+6. Determine risk treatment actions
+7. Select and document applicable security controls
+8. Implement ISMS activities
+9. Collect and track control evidence
+10. Monitor, review, and report risk and compliance status
+
+This approach demonstrates how individual GRC activities connect together rather than operating as isolated documents.
+
+---
+
+## Portfolio Purpose
+
+I developed this project to demonstrate my ability to apply cybersecurity governance, risk management, compliance, and ISO/IEC 27001 concepts in a practical business scenario.
+
+The portfolio focuses on translating security and compliance requirements into structured activities that can be tracked, evidenced, communicated, and improved over time.
+
+---
+
+## Disclaimer
+
+**NovaPay Solutions Ltd. is a fictional organisation created solely for this cybersecurity GRC portfolio project.**
+
+All company names, systems, risks, findings, scenarios, and supporting information contained in this repository were created for educational and portfolio purposes.
+
+No confidential information from any current or former employer, client, or third party is included in this repository.
+
+---
+
+## Author
+
+**Bola-GRC**
+
+Cybersecurity Governance, Risk and Compliance Portfolio
